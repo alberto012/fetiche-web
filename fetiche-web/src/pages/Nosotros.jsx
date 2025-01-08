@@ -1,4 +1,4 @@
-import logo from "../assets/fetiche.png";
+import logo from "../assets/burger/fetiche.png";
 const Nosotros = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 ">
