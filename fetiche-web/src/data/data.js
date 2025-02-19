@@ -1,46 +1,57 @@
-import fetiche from '../assets/burger/datelgusto.png';
-import lomito from '../assets/burger/lomito.png';
+import fetiche from '../assets/burger/cometeldoble.jpg';
+import lomito from '../assets/burger/portada.jpg'; 
+import dateelgusto from 'C:/Users/ryrco/Desktop/fetiche/fetiche-web/fetiche-web/src/assets/Burger/datelgusto.png';
+// Datos para la sección hero
 
 
-//hero section data
+
+
+
 export const data = [
   {
     id: 1,
-    colorDeep: "#e5bb4b",
-    colorLite: "#1111",
+    colorDeep: "#e5bb4b", 
+    colorLite: "#ffdb8a",
     mainText: "Descubre el sabor único de nuestros lomitos",
-    subText:
-      "¡No te lo pierdas!"
-      ,
- 
+    subText: "¡No te lo pierdas!",
+    shadow: "0 0 15px rgba(229, 187, 75, 0.5)",
+    mobileShadow: "0 0 10px rgba(229, 187, 75, 0.3)",
     img: fetiche,
   },
   {
     id: 2,
     colorDeep: "#fec748",
-    colorLite: "#1111",
+    colorLite: "#ffe4a3", 
     mainText: "Ofertas especiales todos los días",
-    subText:
-      "¡2x1 en lomitos todos los miércoles!",
-  
-    img: fetiche,
+    subText: "¡2x1 en lomitos todos los miércoles!",
+    shadow: "0 0 15px rgba(254, 199, 72, 0.5)",
+    mobileShadow: "0 0 10px rgba(254, 199, 72, 0.3)",
+    img: lomito,
   },
   {
     id: 3,
     colorDeep: "#ff8065",
-    colorLite: "#1111",
+    colorLite: "#ffb3a3",
     mainText: "Probá las novedades del Menú",
-    subText:
-      "Prueba nuestros lomitos gourmet.",
-      
-    img: lomito,
+    subText: "Prueba nuestros lomitos gourmet",
+    shadow: "0 0 15px rgba(255, 128, 101, 0.5)", 
+    mobileShadow: "0 0 10px rgba(255, 128, 101, 0.3)",
+    img: dateelgusto,
   },
 ];
 
-//header section data
+// Datos para la navegación
 export const navItems = [
-  { id: '/', label: "Inicio", to: '/' },
-  { id: 'sucursales', label: "Sucursales", to: '/sucursales' },
-
- 
+  { 
+    id: 'inicio',
+    label: "Inicio",
+    to: '/',
+    icon: "🏠"
+  },
+  {
+    id: 'sucursales',
+    label: "Sucursales", 
+    to: '/sucursales',
+    icon: "📍"
+  }
 ];
