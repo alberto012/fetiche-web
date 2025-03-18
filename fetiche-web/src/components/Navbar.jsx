@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import promoil from '../assets/Header/promoil.png';
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
@@ -43,7 +43,7 @@ const Navbar = ({ colorDeep }) => {
 
       <Link
         to='https://pedir.fetichelomiteria.com.ar'
-        className='fixed bottom-4 right-4 z-[1000] text-center text-sm sm:text-base md:text-lg font-black bg-gradient-to-r from-red-800 via-red-600 to-red-800 text-yellow-300 rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 transition-all duration-300 transform hover:scale-125 hover:shadow-[0_0_50px_rgba(220,38,38,0.8)] shadow-2xl animate-bounce border-4 border-red-500 uppercase tracking-wider whitespace-nowrap font-extrabold'
+        className='fixed bottom-4 right-4 z-[9999] text-center text-sm sm:text-base md:text-lg font-black bg-gradient-to-r from-red-800 via-red-600 to-red-800 text-yellow-300 rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 transition-all duration-300 transform hover:scale-125 hover:shadow-[0_0_50px_rgba(220,38,38,0.8)] shadow-2xl animate-bounce border-4 border-red-500 uppercase tracking-wider whitespace-nowrap font-extrabold'
       >
         🔥 ¡PEDÍ YA! 🔥
       </Link>
