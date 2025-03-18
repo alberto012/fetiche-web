@@ -12,7 +12,7 @@ import uhquerico from '../assets/burger/uhquerico.png';
 
 const Home = () => {
       return (
-        <div className="w-full min-h-screen pt-[80px] md:pt-[100px]"> {/* Agregado padding-top para compensar altura del navbar */}
+        <div className="w-full min-h-screen pt-[80px] md:pt-[100px]"> 
          
             <div className="w-full px-4 sm:px-6 md:px-8">
                 <img 
