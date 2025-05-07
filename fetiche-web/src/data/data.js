@@ -1,5 +1,5 @@
-import fetiche from '../assets/burger/cometeldoble.jpg';
-import lomito from '../assets/burger/portada.jpg'; 
+import fetiche from '../assets/Burger/cometeldoble.jpg';
+import lomito from '../assets/Burger/portada.jpg'; 
 import dateelgusto from 'C:/Users/ryrco/Desktop/fetiche/fetiche-web/fetiche-web/src/assets/Burger/datelgusto.png';
 // Datos para la sección hero
 

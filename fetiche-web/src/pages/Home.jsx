@@ -7,7 +7,7 @@ import { Header, Hero } from '../components';
 import 'swiper/swiper-bundle.css';
 import MenuSection from './Menu';
 import NovedadesSection from './Novedades';
-import uhquerico from '../assets/burger/uhquerico.png';
+import uhquerico from '../assets/Burger/uhquerico.png';
 
 
 const Home = () => {
