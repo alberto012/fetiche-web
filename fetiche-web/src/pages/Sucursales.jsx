@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { PiCursorClickBold } from "react-icons/pi";
-import sucursal1 from "../assets/burger/1.png";
-import sucursal2 from "../assets/burger/2.png";
+import sucursal1 from "../assets/Burger/1.png";
+import sucursal2 from "../assets/Burger/2.png";
 import promoil from "../assets/Burger/logoRojo.png";
 
 const SucursalCard = memo(({ imagen, link }) => (
