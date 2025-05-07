@@ -1,6 +1,6 @@
 import fetiche from '../assets/Burger/cometeldoble.jpg';
 import lomito from '../assets/Burger/portada.jpg'; 
-import dateelgusto from 'C:/Users/ryrco/Desktop/fetiche/fetiche-web/fetiche-web/src/assets/Burger/datelgusto.png';
+import datelgustoImg from '../assets/Burger/datelgusto.png'
 // Datos para la sección hero
 
 
@@ -36,7 +36,7 @@ export const data = [
     subText: "Prueba nuestros lomitos gourmet",
     shadow: "0 0 15px rgba(255, 128, 101, 0.5)", 
     mobileShadow: "0 0 10px rgba(255, 128, 101, 0.3)",
-    img: dateelgusto,
+    img: datelgustoImg,
   },
 ];
 
