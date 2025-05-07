@@ -50,16 +50,19 @@ const MenuItem = memo(({ item, isActive, onClick, isMobile }) => (
             }`}>
               Descubre nuestra selección de {item.name.toLowerCase()} preparados con los mejores ingredientes
             </motion.p>
-            <motion.button
+            <motion.a
+              href={isMobile ? "https://linktr.ee/fetiche.lomitos" : "https://linktr.ee/fetiche.lomitos"}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full
-                transition-all duration-300 shadow-lg hover:shadow-xl ${
+              className={`inline-block bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full
+                transition-all duration-300 shadow-lg hover:shadow-xl text-center ${
                   isMobile ? 'px-6 py-3 text-base w-full' : isActive ? 'px-6 py-1 text-xl' : 'px-2 py-3 text-lg'
                 }`}
             >
               Ver Más
-            </motion.button>
+            </motion.a>
           </motion.div>
         )}
       </motion.div>
@@ -131,17 +134,18 @@ const MenuSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                   <div className="flex justify-between items-center">
                     <h3 className="text-2xl font-bold text-white">{item.name}</h3>
-                    <motion.button
+                    <motion.a
+                      href="https://linktr.ee/fetiche.lomitos"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="px-4 py-2 bg-red-600 text-white text-sm font-bold rounded-full shadow-lg hover:bg-red-700 transition-all duration-300"
                     >
                       Ver Más
-                    </motion.button>
+                    </motion.a>
                   </div>
                 </div>
-
-
               </motion.div>
             ))}
           </motion.div>

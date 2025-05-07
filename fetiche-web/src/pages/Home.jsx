@@ -12,12 +12,12 @@ import uhquerico from '../assets/burger/uhquerico.png';
 
 const Home = () => {
       return (
-        <div className="w-full min-h-screen pt-[80px] md:pt-[100px]"> 
+        <div className="w-full min-h-screen pt-[80px] md:pt-[100px] max-w-[1920px] mx-auto overflow-hidden"> 
          
-            <div className="w-full px-4 sm:px-6 md:px-8">
+            <div className="w-full px-4 sm:px-6 md:px-8 flex justify-center">
                 <img 
                     src={uhquerico} 
-                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[450px] max-w-[720px] mx-auto invert"
+                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[450px] max-w-[720px] invert object-contain"
                     alt="Fetiche Burger"
                     loading="lazy"
                 />
@@ -59,6 +59,7 @@ const Home = () => {
             >
                 {data.map(({ id, colorDeep, colorLite, mainText, subText, shadow, mobileShadow, img }) => (
                     <SwiperSlide 
+                    onClick={() => window.open('https://linktr.ee/fetiche.lomitos', '_blank')}
                         key={id}  
                         className="w-full h-full flex flex-col gap-1 sm:gap-2 md:gap-4 pt-2 sm:pt-3 md:pt-8 mb-0.25 sm:mb-0.5 md:mb-1 relative overflow-hidden hover:scale-[1.02] transition-transform duration-500"
                     >
@@ -67,12 +68,13 @@ const Home = () => {
                             mobileShadow={mobileShadow}
                             img={img}
                             className="w-full h-full object-cover"
+                            
                         />
                     </SwiperSlide>
                 ))}
             </Swiper>
 
-            <div className="w-full px-2 sm:px-3 md:px-4">
+            <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8">
                 <NovedadesSection/>
                 <MenuSection/>
                 <Sucursales />

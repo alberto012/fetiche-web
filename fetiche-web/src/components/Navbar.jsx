@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import promoil from '../assets/Header/promoil.png';
+import logoBlanco from '../assets/Burger/Desde1980.png';
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import { navItems } from '../data/data';
@@ -9,15 +10,18 @@ const Navbar = ({ colorDeep }) => {
 
   return (
     <>
-      <header className='fixed top-0 left-0 right-0 z-[999] flex flex-col lg:flex-row w-full px-4 md:px-8 gap-2 lg:gap-0 lg:items-center lg:justify-between bg-gradient-to-b from-black/60 via-black/40 to-transparent backdrop-blur-md'>
+      <header className='fixed top-0 left-0 right-0 z-[999] flex flex-col lg:flex-row w-full px-4 md:px-8 gap-2 lg:gap-0 lg:items-center lg:justify-between bg-gradient-to-b from-black/60 via-black/40 to-transparent backdrop-blur-sm lg:backdrop-blur-md'>
         <div className='flex items-center justify-between w-full lg:w-auto'>
-          <div className={`flex justify-center items-center p-2`} style={{ borderColor: `${colorDeep}` }}>
+          <div className={`hidden lg:flex justify-center items-center p-2`} style={{ borderColor: `${colorDeep}` }}>
             <Link to='/'>
               <img src={promoil} alt="fetiche logo" className="w-full h-auto max-w-[80px] md:max-w-[90px]" width="50" height="80" />
             </Link>
           </div>
+          <div className="flex justify-center items-center w-full lg:absolute lg:left-1/2 lg:-translate-x-1/2">
+            <img src={logoBlanco} alt="Logo Blanco" className="w-[250px] h-[100%] object-top" />
+          </div>
           <button 
-            className="lg:hidden focus:outline-none focus:shadow-outline p-2" 
+            className="block lg:hidden focus:outline-none focus:shadow-outline p-2" 
             onClick={() => setOpenMenu(prev => !prev)}
           >
             {openMenu ? <IoCloseOutline className='w-6 h-6' /> : <IoMenuOutline className='w-6 h-6' />}
@@ -42,7 +46,7 @@ const Navbar = ({ colorDeep }) => {
       </header>
 
       <Link
-        to='https://pedir.fetichelomiteria.com.ar'
+        to='https://linktr.ee/fetiche.lomitos'
         className='fixed bottom-4 right-4 z-[9999] text-center text-sm sm:text-base md:text-lg font-black bg-gradient-to-r from-red-800 via-red-600 to-red-800 text-yellow-300 rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 transition-all duration-300 transform hover:scale-125 hover:shadow-[0_0_50px_rgba(220,38,38,0.8)] shadow-2xl animate-bounce border-4 border-red-500 uppercase tracking-wider whitespace-nowrap font-extrabold'
       >
         🔥 ¡PEDÍ YA! 🔥

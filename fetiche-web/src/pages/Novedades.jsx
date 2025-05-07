@@ -9,24 +9,22 @@ const novedades = [
     title: "¡MEGA PROMO LOMITO!",
     description: "Lomito de pollo premium con guarnición a elección. ¡El mejor precio del mercado!",
     image: planazo,
-    precio: "$2999",
-    etiqueta: "OFERTA LIMITADA",
+   
     disponible: true
   },
   {
     title: "2x1 EN LOMITOS", 
     description: "¡La mejor promo para compartir! Dos lomitos completos al precio de uno.",
     image: eligenos,
-    precio: "$4500",
-    etiqueta: "MEJOR VALOR",
+
     disponible: true
   },
   {
     title: "COMBO FETICHE",
     description: "¡El combo más completo! Lomito + Papas + Gaseosa. ¡Una experiencia única!",
     image: promo,
-    precio: "$3500",
-    etiqueta: "MÁS VENDIDO",
+   
+
     disponible: true
   },
 ];
@@ -46,9 +44,7 @@ const PromoCard = memo(({ novedad, index, setHoveredIndex }) => (
       className="absolute top-2 sm:top-4 right-2 sm:right-4 z-10"
       whileHover={{ scale: 1.1 }}
     >
-      <span className="bg-yellow-500 text-black text-xs sm:text-sm font-extrabold px-3 sm:px-6 py-1 sm:py-2 rounded-full shadow-lg">
-        {novedad.etiqueta}
-      </span>
+   
     </motion.div>
 
     
@@ -76,6 +72,7 @@ const PromoCard = memo(({ novedad, index, setHoveredIndex }) => (
             className="py-2 sm:py-4 px-6 sm:px-10 bg-yellow-500 text-black text-sm sm:text-base font-extrabold rounded-full shadow-xl transition-all duration-300 hover:bg-yellow-400"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.open('https://linktr.ee/fetiche.lomitos', '_blank')}
           >
             Ver mas
           </motion.button>
